@@ -1,7 +1,9 @@
 {
     "cSpell.words": [
         "emflogo",
+        "firestore",
         "GRAYINPUT",
         "roboto"
-    ]
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

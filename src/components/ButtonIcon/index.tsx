@@ -2,6 +2,8 @@ import React from 'react';
 import { TouchableOpacityProps } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 
+import auth from '@react-native-firebase/auth';
+
 import { Container } from './styles';
 import theme from '../../theme';
 
@@ -11,7 +13,12 @@ type Props = TouchableOpacityProps & {
   icon?: React.ComponentProps<typeof MaterialIcons>['name'];
 }
 
-export function ButtonIcon({ color = 'success', size = 'large', icon, ...rest }: Props) {
+export function ButtonIcon({ color = 'success', size = 'small', icon, ...rest }: Props) {
+
+  function handleLogout(){
+    auth().signOut();
+  }
+
   return (
     <Container
       activeOpacity={0.8}
@@ -23,6 +30,7 @@ export function ButtonIcon({ color = 'success', size = 'large', icon, ...rest }:
         name={icon}
         size={size === 'small' ? 20 : 28}
         color={theme.COLORS.WHITE}
+        onPress={handleLogout}
       />
     </Container>
   );

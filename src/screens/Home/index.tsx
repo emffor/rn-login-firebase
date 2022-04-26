@@ -13,6 +13,7 @@ export function Home(){
             title="Logout"
             showLogoutButton
         />
+        <Title> Home </Title>
     </Container>
   );
 }

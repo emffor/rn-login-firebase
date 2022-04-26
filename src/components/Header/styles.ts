@@ -1,5 +1,4 @@
 import styled from 'styled-components/native';
-import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
 type ContainerProps = {
   showLogoutButton: boolean;
@@ -8,15 +7,15 @@ type ContainerProps = {
 export const Container = styled.View<ContainerProps>`
   width: 100%;
   height: 100px;
-  background-color: ${({ theme }) => theme.COLORS.BLUE};
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
 
   flex-direction: ${({ showLogoutButton }) => showLogoutButton ? 'row' : 'column'};
   align-items: center;
-  justify-content: ${({ showLogoutButton }) => showLogoutButton ? 'space-around' : 'center'};
+  justify-content: ${({ showLogoutButton }) => showLogoutButton ? 'center' : 'center'};
 `;
 
 export const Title = styled.Text`
-  font-size: 60px;
+  font-size: 30px;
 
   color: ${({ theme }) => theme.COLORS.WHITE};
   font-Family: ${({ theme }) => theme.FONTS.MEDIUM};

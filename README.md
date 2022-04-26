@@ -63,5 +63,5 @@
 
 **Instalar o Auth do Firebase**
 
-yarn add @react-native-firebase/auth
+- yarn add @react-native-firebase/auth
 

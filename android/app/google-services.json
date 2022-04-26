@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "339954258738",
+    "project_id": "loginwithfirebase-b2332",
+    "storage_bucket": "loginwithfirebase-b2332.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339954258738:android:d2318c36e0f2eff967bd2b",
+        "android_client_info": {
+          "package_name": "com.rnloginfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339954258738-jrs545vdpvmmke6agrsnjf7f8ca2b48g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2IuwqwRMJOEt4twd4huVGTJnJcBl_AgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339954258738-jrs545vdpvmmke6agrsnjf7f8ca2b48g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
