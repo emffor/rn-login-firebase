@@ -19,7 +19,6 @@ export function SignIn() {
      .createUserWithEmailAndPassword(email, password)
      .then(() => Alert.alert('Usuário criado com sucesso!'))
      .catch(error => {
-       // console.log(error.code);
  
        if(error.code === 'auth/email-already-in-use'){
         return Alert.alert('E-mail já cadastrado!');
@@ -34,7 +33,7 @@ export function SignIn() {
        }
      })
    }
-
+   
    function handleSignInWithEmailAndPassword(){
     auth()
     .signInWithEmailAndPassword(email, password)
